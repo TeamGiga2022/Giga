@@ -47,13 +47,13 @@
           <button type="button" class="btn btn-primary btn-block" label for="inbox">Inbox</button>
           </div>
           <div class="col-3 border text-center bg-light span2" aria-labelledby="outbox">
-          <button type="button" class="btn btn-primary btn-block" label for="outbox">outbox</button>
+          <button type="button" class="btn btn-primary btn-block" label for="outbox">Outbox</button>
           </div>
           <div class="col-3 border bg-light text-center" aria-labelledby="send message">
-          <button type="button" class="btn btn-primary btn-block" label for="send message">send message</button>
+          <button type="button" class="btn btn-primary btn-block" label for="send message">Send Message</button>
           </div>
           <div class="col-3 text-center border bg-light" aria-labelledby="view notes">
-          <button type="button" class="btn btn-primary btn-block" label for="view notes">view notes</button>
+          <button type="button" class="btn btn-primary btn-block" label for="view notes">View Notes</button>
           </div>
         </div>
       </div>
@@ -61,9 +61,37 @@
 
 
 <!-- start of Template -->
+<!-- Will grab email info from database and display them in these containers-->
         <div class="row">
-            
+            <div class="col text-center border bg-light">
+                <div class="row">
+                    <h4> From: Username </h4>
+                    <h4> Received: 20/3/22 </h4>
+                </div>
+                <div class="row border">
+                    <h4> Subject: Info </h4>
+                </div>
+                <div class="row border">
+                    <p> Dear User,
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur, libero vel eleifend gravida, ipsum tortor lobortis purus, sit amet sollicitudin urna urna vitae tortor. Phasellus at lectus neque. Nulla at ex nulla. Morbi convallis congue pulvinar. Nam posuere, leo eu lacinia convallis, nisi erat viverra neque, a molestie libero tortor id eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam finibus, libero vitae porta semper, nulla velit eleifend quam, ac euismod felis dui ut odio. </p>
+                </div>
+            </div>
         </div>
+        <!-- Button row-->
+        <div class="row button-row text-center">
+            <div class="col text-center">
+                <button type="button" class="btn btn-warning btn-lg ">Forward</button>
+            </div>
+            <div class="col-sm ">
+                <button type="button" class="btn btn-info btn-lg ">Reply</button>
+            </div>
+            <div class="col text-center">
+                <button type="button" class="btn btn-danger btn-lg ">Delete</button>
+            </div>
+
+        </div>
+        <!-- End Button row-->
+
       
 
   </body>
