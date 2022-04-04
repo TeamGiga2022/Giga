@@ -1,3 +1,39 @@
 body{
     background-color: white;
 }
+
+.myplan {
+    text-align: center;
+    border-style: ridge;
+    background-color:  red;
+    display: block;
+}
+
+
+.actionplan
+{
+    text-align: center;
+    border-style: ridge;
+    background-color: orange;
+    display: block;
+}
+
+.mailnote
+{
+    text-align: center;
+    border-style: ridge;
+    background-color: #00ff00;
+    display: block;
+}
+
+.inbox {
+    text-align: center;
+    border-style: ridge;
+    background-color: yellow;
+    display: block;
+}
+
+.box {
+    border-style: ridge;
+    border-color: #00ff00;
+}

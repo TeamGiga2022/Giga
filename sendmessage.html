@@ -26,65 +26,67 @@
         <img src="Pics\woman.jpg" class="float-left" >
         <h3> Username </h3>
     </div>
-
-    <!-- Button Row Main NavBar -->
-    <div class="row">
-      <div class="col-4 text-center border bg-light">
-          <a href="#" class="btn btn-block btn-dark">My Plan</a>
-      </div>
-      <div class="col-4 text-center border bg-light">
-        <a href="#" class="btn btn-block btn-dark">Action Plan</a>
-      </div>
-      <div class="col-4 text-center border bg-light">
-        <a href="index.html" class="btn btn-block btn-dark">Mail/Notes</a>
-      </div>
-    </div>
-
-<!-- Button Row Mail&Notes -->
+    <div class="container box">
+      <!-- Button Row Main NavBar -->
       <div class="row">
-        <div class="btn-group btn-group-lg" role="group"   aria-label="Button group for inbox, outbox, send message and view notes">
-          <div class="col-3 text-center border bg-light justify-content-between" aria-labelledby="inbox">
-            <a href="index.html" class="btn btn-block btn-primary">Inbox</a>
-          </div>
-          <div class="col-3 border text-center bg-light span2" aria-labelledby="outbox">
-            <a href="outbox.html" class="btn btn-block btn-primary">Outbox</a>
-          </div>
-          <div class="col-3 border bg-light text-center" aria-labelledby="send message">
-            <a href="sendmessage.html" class="btn btn-block btn-primary">Send Message</a>
-          </div>
-          <div class="col-3 text-center border bg-light" aria-labelledby="view notes">
-            <a href="notes.html" class="btn btn-block btn-primary">View Notes</a>
-          </div>
+        <div class="col-4 myplan">
+            <a href="#" class="btn myplan">My Plan</a>
+        </div>
+        <div class="col-4 actionplan">
+          <a href="#" class="btn actionplan">Action Plan</a>
+        </div>
+        <div class="col-4 mailnote">
+          <a href="index.html" class="btn mailnote">Mail/Notes</a>
         </div>
       </div>
 
+  <!-- Button Row Mail&Notes -->
+        <div class="row">
+          <div class="btn-group btn-group-lg" role="group"   aria-label="Button group for inbox, outbox, send message and view notes">
+            <div class="col-3 text-center border bg-light justify-content-between" aria-labelledby="inbox">
+              <a href="index.html" class="btn btn-block btn-primary">Inbox</a>
+            </div>
+            <div class="col-3 border text-center bg-light span2" aria-labelledby="outbox">
+              <a href="outbox.html" class="btn btn-block btn-primary">Outbox</a>
+            </div>
+            <div class="col-3 border bg-light text-center" aria-labelledby="send message">
+              <a href="sendmessage.html" class="btn btn-block btn-primary">Send Message</a>
+            </div>
+            <div class="col-3 text-center border bg-light" aria-labelledby="view notes">
+              <a href="notes.html" class="btn btn-block btn-primary">View Notes</a>
+            </div>
+          </div>
+        </div>
 
 
-<!-- start of Template -->
-<form method="POST">
-    <div class="form-group">
-      <label for="EmailAddress">To:</label>
-      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+
+  <!-- start of Template -->
+  <form method="POST">
+      <div class="form-group">
+        <label for="EmailAddress">To:</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="CC">CC:</label>
+        <input type="text" class="form-control" id="cc" placeholder="CC">
+      </div>
+      <div class="form-group">
+        <label for="BCC">BCC:</label>
+        <input type="text" class="form-control" id="bcc" placeholder="BCC">
+      </div>
+      <div class="form-group">
+        <label for="Subject">Subject:</label>
+        <input type="text" class="form-control" id="subject" placeholder="Subject">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-dark">Send</button>
+    </form>
     </div>
-    <div class="form-group">
-      <label for="CC">CC:</label>
-      <input type="text" class="form-control" id="cc" placeholder="CC">
-    </div>
-    <div class="form-group">
-      <label for="BCC">BCC:</label>
-      <input type="text" class="form-control" id="bcc" placeholder="BCC">
-    </div>
-    <div class="form-group">
-      <label for="Subject">Subject:</label>
-      <input type="text" class="form-control" id="subject" placeholder="Subject">
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlTextarea1">Message:</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-    </div>
-    <br>
-    <button type="submit" class="btn btn-dark">Send</button>
-  </form>
+  </div>
       
 
   </body>
