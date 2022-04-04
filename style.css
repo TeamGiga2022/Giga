@@ -164,3 +164,11 @@ body{
 .notetable tr:hover {
     background-color: #9ab6dd
 }
+
+.read {
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+    background-color: white;
+}
+
