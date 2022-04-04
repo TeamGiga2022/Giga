@@ -98,7 +98,7 @@ body{
 
 .but {
     transition-duration: 0.4s;
-    display: inline-block;
+    display: block;
     border-style: ridge;
     background-color: lightblue;
     margin: 5%;
@@ -114,4 +114,53 @@ body{
     text-align: center;
     text-decoration: underline;
     margin-top: 1%;
+}
+
+.sendbut {
+    transition-duration: 0.4s;
+    display: block;
+    border-style: ridge;
+    background-color: coral;
+    font-size: 24px;
+    margin: 1%;
+}
+
+.sendbut:hover {
+    background-color: orange;
+    color: white;
+}
+
+.sendbody {
+    background-color: #3a3b3c;
+    color: white;
+}
+
+.notetable {
+    margin-top: 2%;
+    background-color: white;
+}
+
+.notetable td {
+    border: 2px;
+    border-style: solid;
+}
+
+.notetable th {
+    background-color: coral ;
+    text-decoration: underline;
+    border: 3px;
+    border-style: solid;
+}
+
+.notetable tr {
+    border: 2px;
+    border-style: solid;
+}
+
+.notetable tr:nth-child(even){
+    background-color: #d7e5f0
+}
+
+.notetable tr:hover {
+    background-color: #9ab6dd
 }
