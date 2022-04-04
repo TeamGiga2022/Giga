@@ -5,6 +5,7 @@ body{
 .myplan {
     text-align: center;
     border-style: ridge;
+    border-width: 2px;
     background-color:  red;
     display: block;
 }
@@ -14,6 +15,7 @@ body{
 {
     text-align: center;
     border-style: ridge;
+    border-width: 2px;
     background-color: orange;
     display: block;
 }
@@ -22,6 +24,7 @@ body{
 {
     text-align: center;
     border-style: ridge;
+    border-width: 2px;
     background-color: #00ff00;
     display: block;
 }
@@ -29,7 +32,32 @@ body{
 .inbox {
     text-align: center;
     border-style: ridge;
+    border-width: 2px;
     background-color: yellow;
+    display: block;
+}
+
+.outbox {
+    text-align: center;
+    border-style: ridge;
+    border-width: 2px;
+    background-color: turquoise;
+    display: block;
+}
+
+.send {
+    text-align: center;
+    border-style: ridge;
+    border-width: 2px;
+    background-color: #b19cd9;
+    display: block;
+}
+
+.viewnote {
+    text-align: center;
+    border-style: ridge;
+    border-width: 2px;
+    background-color: grey;
     display: block;
 }
 
