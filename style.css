@@ -63,5 +63,55 @@ body{
 
 .box {
     border-style: ridge;
+    border-width: 4px;
     border-color: #00ff00;
+}
+
+.pic {
+    background-color: black;
+    display: block;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.message {
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+.profile
+{
+    text-align: center;
+    border-style: ridge;
+    border-width: 2px;
+    background-color: grey;
+    display: block;
+    margin-bottom: 3%;
+    margin-left: 0.25%;
+}
+
+.profile img {
+    padding-top: 3%;
+}
+
+.but {
+    transition-duration: 0.4s;
+    display: inline-block;
+    border-style: ridge;
+    background-color: lightblue;
+    margin: 5%;
+    font-size: 20px;
+}
+
+.but:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.outof {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 1%;
 }
