@@ -172,3 +172,16 @@ body{
     background-color: white;
 }
 
+.add {
+    text-align: center;
+    border-style: ridge;
+    border-width: 2px;
+    background-color: green;
+}
+
+.remove {
+    text-align: center;
+    border-style: ridge;
+    border-width: 2px;
+    background-color: red;
+}
