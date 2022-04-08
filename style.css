@@ -6,7 +6,7 @@ body{
     text-align: center;
     border-style: solid;
     border-width: 2px;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color:  red;
     display: block;
     margin-bottom: 2%;
@@ -22,7 +22,7 @@ body{
     text-align: center;
     border-style: solid;
     border-width: 2px;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: orange;
     display: block;
     margin-bottom: 2%;
@@ -38,7 +38,7 @@ body{
     text-align: center;
     border-style: solid;
     border-width: 2px;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: #00ff00;
     display: block;
     margin-bottom: 2%;
@@ -53,7 +53,7 @@ body{
     text-align: center;
     border-style: solid;
     border-width: 2px;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: #EFEEF0;
     display: block;
     margin-bottom: 2%;
@@ -68,7 +68,7 @@ body{
     text-align: center;
     border-style: solid;
     border-width: 2px;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: lightblue;
     display: block;
     margin-bottom: 2%;
@@ -83,7 +83,7 @@ body{
     text-align: center;
     border-style: solid;
     border-width: 2px;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: #EFEEF0;
     display: block;
     margin-bottom: 2%;
@@ -98,7 +98,7 @@ body{
     text-align: center;
     border-style: solid;
     border-width: 2px;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: lightblue;
     display: block;
     margin-bottom: 2%;
@@ -113,7 +113,7 @@ body{
     border-style: solid;
     padding: 2%;
     border-width: 2px;
-    border-radius: 25px;
+    border-radius: 20px;
     border-color: black;
     background-color: white;
 }
