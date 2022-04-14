@@ -36,6 +36,7 @@ CREATE TABLE email (
     cc       VARCHAR2(20),
     bcc      VARCHAR2(20),
     subject  VARCHAR2(30),
+    message  VARCHAR(600),
     user_id  NUMBER(10) NOT NULL
 );
 
