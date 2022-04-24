@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--title is text-only and shown in browser title bar -->
+  <title>Mail</title>
+  <!-- Meta Tags: To ensure proper rendering and touch zooming, add the following meta tag inside the <head> element: -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS ="bootstrap-5.1.3-dist/css/bootstrap.min.css" -->
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+  <body>
+
+    <!-- container for the main body --> <!-- -->
+    <div class="container">
+
+      <div class="row profile" style="max-width: 200px">
+        <!-- Buffer Zone -->
+          <img src="Pics\woman.jpg" class="float-left" >
+          <h3> Username </h3>
+      </div>
+      <!-- Button Row Main NavBar -->
+      <div class="row">
+        <div class="col-4 myplan">
+            <a href="#" class="btn myplan">
+              My Plan
+              <img src="Pics/plan.png" alt="My Plan" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-4 actionplan">
+          <a href="#" class="btn actionplan">
+            Action Plan 
+            <img src="Pics/goal.png" alt="Action Plan" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-4 mailnote">
+          <a href="index.html" class="btn mailnote">
+            Mail/Notes
+            <img src="Pics/mail.png" alt="Mail" class="img-fluid">
+          </a>
+        </div>
+      </div>
+      
+        <div class="container box">
+      
+          <!-- Button Row Mail&Notes -->
+      <div class="row">
+        <div class="col-sm inbox" aria-labelledby="inbox">
+          <a href="index.html" class="btn inbox">
+            Inbox
+            <img src="Pics/inbox.png" alt="Inbox" class="img-fluid">
+          </a>
+        </div>
+
+        <div class="col-sm outbox" aria-labelledby="outbox">
+          <a href="outbox.html" class="btn outbox">
+            Outbox
+            <img src="Pics/outbox.png" alt="Outbox" class="img-fluid">
+          </a>
+        </div>
+
+        <div class="col-sm send" aria-labelledby="send message">
+          <a href="sendmessage.html" class="btn send">
+            Send Message
+            <img src="Pics/send.png" alt="Send message" class="img-fluid">
+          </a>
+        </div>
+
+        <div class="col-sm viewnote" aria-labelledby="view notes">
+          <a href="notes.html" class="btn viewnote">
+            View Notes
+            <img src="Pics/notes.png" alt="Notes" class="img-fluid">
+          </a>
+        </div>
+     </div>
+
+
+
+
+  <!-- start of Template -->
+  <!-- Will grab email info from database and display them in these containers-->
+          <div class="row">
+                  <div class="col-sm-4 read" border>
+                      <h4> From: </h4>
+                  </div>
+                  <div class="col-sm-4 read">
+                  <h4> Received: </h4>
+                  </div>
+                  <div class="col-sm-4 read">
+                      <h4> Subject: </h4>
+                  </div>
+          </div>
+                  <div class="row read">
+                    <script src="app.js"></script>
+                  </div>
+        
+          <!-- Button row-->
+          <div class="row button-row text-center">
+              <div class="col text-center">
+                  <button type="button" class="btn btn-warning btn-lg ">Forward</button>
+              </div>
+              <div class="col-sm ">
+                  <button type="button" class="btn btn-info btn-lg ">Reply</button>
+              </div>
+              <div class="col text-center">
+                  <button type="button" class="btn btn-danger btn-lg ">Delete</button>
+              </div>
+            </div>
+        </div>
+        <!-- End Button row-->
+
+      
+
+  </body>
+
+  <footer>
+  </footer>
+
+</html>

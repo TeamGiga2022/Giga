@@ -1,0 +1,263 @@
+body{
+    background-color: #ebecf0;
+}
+
+.myplan {
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color:  red;
+    display: block;
+    margin-bottom: 2%;
+}
+
+.myplan img {
+    width: 10%;
+    height: 10%;
+}
+
+.actionplan
+{
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color: orange;
+    display: block;
+    margin-bottom: 2%;
+}
+
+.actionplan img {
+    width: 10%;
+    height: 10%;
+}
+
+.mailnote
+{
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color: #00ff00;
+    display: block;
+    margin-bottom: 2%;
+}
+
+.mailnote img {
+    height: 10%;
+    width: 10%;
+}
+
+.inbox {
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color: #EFEEF0;
+    display: block;
+    margin-bottom: 2%;
+}
+
+.inbox img {
+    width: 10%;
+    height: 10%;
+}
+
+.outbox {
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color: lightblue;
+    display: block;
+    margin-bottom: 2%;
+}
+
+.outbox img {
+    width: 10%;
+    height: 10%;
+}
+
+.send {
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color: #EFEEF0;
+    display: block;
+    margin-bottom: 2%;
+}
+
+.send img {
+    width: 10%;
+    height: 10%;
+}
+
+.viewnote {
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color: lightblue;
+    display: block;
+    margin-bottom: 2%;
+}
+
+.viewnote img {
+    width: 10%;
+    height: 10%;
+}
+
+.box {
+    border-style: solid;
+    padding: 2%;
+    border-width: 2px;
+    border-radius: 20px;
+    border-color: black;
+    background-color: white;
+}
+
+.pic {
+    display: block;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+pic a, img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.message {
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+
+}
+
+.profile
+{
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    background-color: white;
+    display: block;
+    margin-bottom: 3%;
+    margin-left: 0.25%;
+    border-radius: 15px;
+    height: 10%;
+    width: 10%;
+}
+.profile h3 {
+    font-size: 150%;
+}
+.profile img {
+    padding-top: 3%;
+    border-radius: 25px;
+}
+
+.but {
+    transition-duration: 0.4s;
+    display: block;
+    border-style: solid;
+    background-color: lightblue;
+    margin: 5%;
+    font-size: 20px;
+}
+
+.but:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.outof {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 1%;
+}
+
+.sendbody {
+    background-color: #bfbbc3;
+}
+
+.sendbut {
+    transition-duration: 0.4s;
+    display: block;
+    border-style: solid;
+    background-color: coral;
+    font-size: 24px;
+    margin: 1%;
+}
+
+.sendbut:hover {
+    background-color: orange;
+    color: white;
+}
+
+.notetable {
+    margin-top: 2%;
+    background-color: white;
+}
+
+.notetable td {
+    border: 2px;
+    border-style: solid;
+}
+
+.notetable th {
+    background-color: coral ;
+    text-decoration: underline;
+    border: 3px;
+    border-style: solid;
+}
+
+.notetable tr {
+    border: 2px;
+    border-style: solid;
+}
+
+.notetable tr:nth-child(even){
+    background-color: #d7e5f0
+}
+
+.notetable tr:hover {
+    background-color: #9ab6dd
+}
+
+.read {
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+    background-color: white;
+}
+
+.add {
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    background-color: green;
+    display: block;
+    border-radius: 25px;
+    margin-left: 17%;
+}
+
+.remove {
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    background-color: red;
+    display: block;
+    border-radius: 25px;
+}
+
+.add_button {
+    display: block;
+}
+
+.remove_button {
+    display: block;
+}
