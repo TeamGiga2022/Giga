@@ -3,7 +3,7 @@
 
 <head>
   <!--title is text-only and shown in browser title bar -->
-  <title>Send Mail</title>
+  <title>Mail</title>
   <!-- Meta Tags: To ensure proper rendering and touch zooming, add the following meta tag inside the <head> element: -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap CSS ="bootstrap-5.1.3-dist/css/bootstrap.min.css" -->
@@ -19,13 +19,14 @@
   <body>
 
     <!-- container for the main body --> <!-- -->
-    <div class="container">
+  <div class="container">
 
-    <div class="row profile" style="max-width: 200px">
-      <!-- Buffer Zone -->
-        <img src="Pics\woman.jpg" class="float-left" >
-        <p> Username </p>
-    </div>
+
+      <div class="row profile">
+        <!-- Buffer Zone -->
+          <img src="Pics\woman.jpg" class="float-left" >
+          <p> Username </p>
+      </div>
       <!-- Button Row Main NavBar -->
       <div class="row">
         <div class="col-4 myplan">
@@ -81,35 +82,31 @@
           </div>
        </div>
 
+       <!--Begin form-->
+       <form method="POST">
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="date" class="form-control" id="date">
+        </div>
+        <div class="form-group">
+          <label for="activity">Activity:</label>
+          <input type="text" class="form-control" id="activity">
+        </div>
+        <div class="form-group">
+          <label for="workernotes">Worker Notes:</label>
+          <input type="text" class="form-control" id="workernotes">
+        </div>
+        <div class="form-group">
+          <label for="followup">Follow-up</label>
+          <input type="text" class="form-control" id="followup">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-block submit">Submit</button>
+      </form>
 
-
-  <!-- start of Template -->
-  <form method="POST">
-      <div class="form-group">
-        <label for="EmailAddress">To:</label>
-        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-      </div>
-      <div class="form-group">
-        <label for="CC">CC:</label>
-        <input type="text" class="form-control" id="cc" placeholder="CC">
-      </div>
-      <div class="form-group">
-        <label for="BCC">BCC:</label>
-        <input type="text" class="form-control" id="bcc" placeholder="BCC">
-      </div>
-      <div class="form-group">
-        <label for="Subject">Subject:</label>
-        <input type="text" class="form-control" id="subject" placeholder="Subject">
-      </div>
-      <div class="form-group">
-        <label for="Message">Message:</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-      </div>
-      <br>
-      <button type="submit" class="btn btn-block sendbut">Send</button>
-    </form>
-    </div>
-  </div>
+    </div><!-- End container -->
+    <script type="text/javascript" src="https://cdn.rawgit.com/ricmoo/aes-js/e27b99df/index.js"></script>
+    <script src="encrypt.js"> </script>
   </body>
 
   <footer>

@@ -283,16 +283,14 @@ pic a, img {
 }
 
 .sendbody {
-    background-color: #bfbbc3;
+    background-color: #dddddd;
 }
 
 .sendbut {
     transition-duration: 0.4s;
-    display: block;
     border-style: solid;
     background-color: coral;
-    font-size: 24px;
-    margin: 1%;
+    font-size: 140%;
 }
 
 .sendbut:hover {
@@ -362,4 +360,21 @@ pic a, img {
 
 .remove_button {
     display: block;
+}
+
+.add:hover {
+    background-color: #65a765;
+}
+
+.remove:hover {
+    background-color: #ff6b6b;
+}
+
+.submit {
+    background-color: green;
+    color: white;
+}
+
+.submit:hover {
+    background-color: #00ff00;
 }
