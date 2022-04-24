@@ -12,6 +12,20 @@ body{
     margin-bottom: 2%;
 }
 
+.myplan button {
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color:  red;
+    display: block;
+    margin-bottom: 2%;
+}
+
+.myplan:hover {
+    background-color: #bf0000;
+}
+
 .myplan img {
     width: 10%;
     height: 10%;
@@ -26,6 +40,20 @@ body{
     background-color: orange;
     display: block;
     margin-bottom: 2%;
+}
+
+.actionplan button {
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color:  red;
+    display: block;
+    margin-bottom: 2%;
+}
+
+.actionplan:hover {
+    background-color: #ff721e;
 }
 
 .actionplan img {
@@ -44,6 +72,20 @@ body{
     margin-bottom: 2%;
 }
 
+.mailnote button {
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color:  red;
+    display: block;
+    margin-bottom: 2%;
+}
+
+.mailnote:hover {
+    background-color: #00dc00;
+}
+
 .mailnote img {
     height: 10%;
     width: 10%;
@@ -57,6 +99,20 @@ body{
     background-color: #EFEEF0;
     display: block;
     margin-bottom: 2%;
+}
+
+.inbox button {
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color: #EFEEF0;
+    display: block;
+    margin-bottom: 2%;
+}
+
+.inbox:hover {
+    background-color: #bebebe;
 }
 
 .inbox img {
@@ -74,10 +130,25 @@ body{
     margin-bottom: 2%;
 }
 
+.outbox button {
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color: lightblue;
+    display: block;
+    margin-bottom: 2%;
+}
+
+.outbox:hover {
+    background-color: #59bfff;
+}
+
 .outbox img {
     width: 10%;
     height: 10%;
 }
+
 
 .send {
     text-align: center;
@@ -87,6 +158,23 @@ body{
     background-color: #EFEEF0;
     display: block;
     margin-bottom: 2%;
+}
+
+.send button {
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color: #EFEEF0;
+    display: block;
+    margin-bottom: 2%;
+}
+
+
+
+
+.send:hover {
+    background-color: #bebebe;
 }
 
 .send img {
@@ -102,6 +190,20 @@ body{
     background-color: lightblue;
     display: block;
     margin-bottom: 2%;
+}
+
+.viewnote button {
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color: lightblue;
+    display: block;
+    margin-bottom: 2%;
+}
+
+.viewnote:hover {
+    background-color: #59bfff;
 }
 
 .viewnote img {
@@ -152,8 +254,8 @@ pic a, img {
     height: 10%;
     width: 10%;
 }
-.profile h3 {
-    font-size: 150%;
+.profile p {
+    margin: 2%;
 }
 .profile img {
     padding-top: 3%;
