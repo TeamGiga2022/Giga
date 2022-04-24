@@ -256,10 +256,22 @@ pic a, img {
 }
 .profile p {
     margin: 2%;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: underline;
 }
+
 .profile img {
     padding-top: 3%;
     border-radius: 25px;
+}
+
+.profile a {
+    color: blue;
+}
+
+.profile a:hover {
+    color: lightcoral;
 }
 
 .but {
