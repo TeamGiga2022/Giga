@@ -1,0 +1,144 @@
+<html lang="en">
+
+<head>
+  <!--title is text-only and shown in browser title bar -->
+  <title>Mail | <%=titles%></title>
+  <!-- Meta Tags: To ensure proper rendering and touch zooming, add the following meta tag inside the <head> element: -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS ="bootstrap-5.1.3-dist/css/bootstrap.min.css" -->
+  <link rel="stylesheet" href="/bootstrap-5.1.3-dist/css/bootstrap.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+  <body>
+
+    <!-- container for the main body --> <!-- -->
+  <div class="container">
+
+
+      <div class="row profile">
+        <!-- Buffer Zone -->
+          <img src="Pics\woman.jpg" class="float-left" >
+          <p> Mary</p>
+      </div>
+      <!-- Button Row Main NavBar -->
+      <div class="row">
+        <div class="col-4 myplan">
+            <a href="#" class="btn myplan">
+              My Plan
+              <img src="Pics/plan.png" alt="My Plan" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-4 actionplan">
+          <a href="#" class="btn actionplan">
+            Action Plan
+            <img src="Pics/goal.png" alt="Action Plan" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-4 mailnote">
+          <a href="index.ejs" class="btn mailnote">
+            Mail/Notes
+            <img src="Pics/mail.png" alt="Mail" class="img-fluid">
+          </a>
+        </div>
+      </div>
+
+      <div class="container box">
+
+      <!-- Button Row Mail&Notes -->
+      <div class="row">
+          <div class="col-sm inbox" aria-labelledby="inbox">
+            <a href="index.ejs" class="btn inbox">
+              Inbox
+              <img src="Pics/inbox.png" alt="Inbox" class="img-fluid">
+            </a>
+          </div>
+
+          <div class="col-sm outbox" aria-labelledby="outbox">
+            <a href="outbox.ejs" class="btn outbox">
+              Outbox
+              <img src="Pics/outbox.png" alt="Outbox" class="img-fluid">
+            </a>
+          </div>
+
+          <div class="col-sm send" aria-labelledby="send message">
+            <a href="sendmessage.ejs" class="btn send">
+              Send Message
+              <img src="Pics/send.png" alt="Send message" class="img-fluid">
+            </a>
+          </div>
+
+          <div class="col-sm viewnote" aria-labelledby="view notes">
+            <a href="notes.ejs" class="btn viewnote">
+              View Notes
+              <img src="Pics/notes.png" alt="Notes" class="img-fluid">
+            </a>
+          </div>
+       </div>
+
+<!-- start of Template -->
+
+      <% if (blogs.length > 0) { %>
+        <% blogs.forEach(thing => { %>
+      <div class="row">
+
+        <!-- first article --> <!-- this is where we would create a structure format - profile pic in first row -->
+        <div class="col-sm-1 pic">
+
+          <img src="Pics\profilepic.png" alt="Picture of User Interface" class="img-fluid">
+        </div>
+
+        <div class="col-sm-2 message">
+          <!-- sender name -->
+          <p class="reciever"> <%=thing.sender %> </p>
+
+          <p>
+
+          </p>
+        </div>
+        <div class="col-sm-8 message">
+          <!-- subject line -->
+          <p class="reciever"> <%=thing.subject %> </p>
+        </div>
+        <div class="col-sm-1 pic">
+          <a href='readmail.ejs'>
+            <%=thing.id%>
+          <img src="Pics\openmail.png" alt="Picture of User Interface" class="img-fluid">
+          </a>
+        </div>
+      </div> <% }) } %><!-- End of first Template -->
+
+
+
+  </div>
+
+
+      <div class="row button-row text-center">
+        <div class="col-sm-1 ">
+            <button type="button" class="btn btn-lg but ">BACK</button>
+        </div>
+
+        <div class="col-sm-10 outof">
+
+        </div>
+
+        <div class="col-sm-1 ">
+            <button type="button" class="btn btn-lg but ">NEXT</button>
+        </div>
+
+      </div><!-- End button row -->
+
+    </div><!-- End container -->
+
+  </body>
+
+  <footer>
+  </footer>
+
+</html>
