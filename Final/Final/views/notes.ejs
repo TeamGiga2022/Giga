@@ -29,34 +29,56 @@
 
     <!-- Button Row Main NavBar -->
     <div class="row">
-      <div class="col-4 text-center border bg-light">
-          <a href="#" class="btn btn-block btn-dark">My Plan</a>
+      <div class="col-4 myplan">
+          <a href="#" class="btn myplan">
+            My Plan
+            <img src="Pics/plan.png" alt="My Plan" class="img-fluid">
+          </a>
       </div>
-      <div class="col-4 text-center border bg-light">
-        <a href="#" class="btn btn-block btn-dark">Action Plan</a>
+      <div class="col-4 actionplan">
+        <a href="#" class="btn actionplan">
+          Action Plan
+          <img src="Pics/goal.png" alt="Action Plan" class="img-fluid">
+        </a>
       </div>
-      <div class="col-4 text-center border bg-light">
-        <a href="index.ejs" class="btn btn-block btn-dark">Mail/Notes</a>
+      <div class="col-4 mailnote">
+        <a href="index.ejs" class="btn mailnote">
+          Mail/Notes
+          <img src="Pics/mail.png" alt="Mail" class="img-fluid">
+        </a>
       </div>
     </div>
 
     <!-- Button Row Mail&Notes -->
     <div class="row">
-      <div class="btn-group btn-group-lg" role="group"   aria-label="Button group for inbox, outbox, send message and view notes">
-        <div class="col-3 text-center border bg-light justify-content-between" aria-labelledby="inbox">
-          <a href="index.ejs" class="btn btn-block btn-primary">Inbox</a>
+        <div class="col-sm inbox" aria-labelledby="inbox">
+          <a href="index.ejs" class="btn inbox">
+            Inbox
+            <img src="Pics/inbox.png" alt="Inbox" class="img-fluid">
+          </a>
         </div>
-        <div class="col-3 border text-center bg-light span2" aria-labelledby="outbox">
-          <a href="outbox.ejs" class="btn btn-block btn-primary">Outbox</a>
+
+        <div class="col-sm outbox" aria-labelledby="outbox">
+          <a href="outbox.ejs" class="btn outbox">
+            Outbox
+            <img src="Pics/outbox.png" alt="Outbox" class="img-fluid">
+          </a>
         </div>
-        <div class="col-3 border bg-light text-center" aria-labelledby="send message">
-          <a href="sendmessage.ejs" class="btn btn-block btn-primary">Send Message</a>
+
+        <div class="col-sm send" aria-labelledby="send message">
+          <a href="sendmessage.ejs" class="btn send">
+            Send Message
+            <img src="Pics/send.png" alt="Send message" class="img-fluid">
+          </a>
         </div>
-        <div class="col-3 text-center border bg-light" aria-labelledby="view notes">
-          <a href="notes.ejs" class="btn btn-block btn-primary">View Notes</a>
+
+        <div class="col-sm viewnote" aria-labelledby="view notes">
+          <a href="notes.ejs" class="btn viewnote">
+            View Notes
+            <img src="Pics/notes.png" alt="Notes" class="img-fluid">
+          </a>
         </div>
-      </div>
-    </div>
+     </div>
 
       <table class="table table-hover border table-dark">
         <thead>
@@ -68,29 +90,19 @@
             </tr>
         </thead>
         <!-- JavaScript for loop to retrieve data and print each row, make rows contrasting colour, only need 1 tr just have multiple for example-->
+        <% if (notes.length > 0) { %>
+          <% notes.forEach(thing => { %>
         <tr class="table-primary">
-            <td> 20/3/22 </td>
-            <td> Goal Progress </td>
-            <td> All good </td>
-            <td> None </td>
-        </tr>
+            <td> <%=thing.date %> </td>
+            <td> <%=thing.activity %> </td>
+            <td> <%=thing.worker_notes %> </td>
+            <td> <%=thing.follow_up %> </td>
+        </tr> <% }) } %>
         <tr class="table-warning">
             <td> 21/3/22 </td>
             <td> Check up </td>
             <td> Positive result </td>
             <td> Update tomorrow </td>
-        </tr>
-        <tr class="table-primary">
-            <td> 20/3/22 </td>
-            <td> Goal Progress </td>
-            <td> Went well </td>
-            <td> Continue work </td>
-        </tr>
-        <tr class="table-warning">
-            <td> 21/3/22 </td>
-            <td> Check up </td>
-            <td> Contact family </td>
-            <td> None </td>
         </tr>
   </body>
 

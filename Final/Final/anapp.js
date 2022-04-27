@@ -18,7 +18,9 @@ app.use(bodyParser.json());
 
 //global arrays
 var array;
-var  idvalue = 3;
+var array2;
+var idnumber = 0;
+var idvalue = 3;
 var letter;
 
 //connect to database
@@ -37,14 +39,19 @@ con.connect(function(err) {
             {id: `${row.id}`, sender: `${row.sender}`, receiver: `${row.receiver}`, cc: `${row.cc}`, bcc: `${row.bcc}`, subject: `${row.subject}`, userid: `${row.userid}` },
           ];*/
     });
+  });//end query
+  //array2 query
+  con.query("SELECT * FROM note", function (err, rows) {
+    if (err) throw err;
+
+    console.log("data recieved from DB:");
+    console.log(rows);
+    array2= rows;
   });//end second query
+
 });//end mysql connection
 
-//register view engine
-app.set('view engine', 'ejs');
 
-//listen for requests
-app.listen(3000);
 
 //pages
 app.get("/index.ejs", (req, res) => {
@@ -72,21 +79,28 @@ app.get('/readmail.ejs', (req, res) => {
 
       console.log("data recieved from DB:");
       console.log(rows);
-      rows.forEach( (row) => {
-        console.log(`${row.sender} is the row dot sender`);
-        console.log(`${row.receiver} is the reciever`);
-        var letter= row/*[
-              {id: `${row.id}`, sender: `${row.sender}`, receiver: `${row.receiver}`, cc: `${row.cc}`, bcc: `${row.bcc}`, subject: `${row.subject}`, userid: `${row.userid}` },
-            ];*/
-            console.log(idvalue);
-      });
+      letter = rows;
+      console.log(idvalue);
+      console.log(letter);
+
     });//end second query
   });//end mysql connection
   res.render('readmail',{ titles: 'readmail', blogs: array });
 });
 
 app.get('/notes.ejs', (req, res) => {
-  res.render('notes', { titles: 'notes', blogs: array});
+  con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+    //now query database
+    con.query("SELECT * FROM note", function (err, rows) {
+      if (err) throw err;
+
+      console.log("data recieved from DB:");
+      array2= rows;
+    });//end second query
+  });//end mysql connection
+  res.render('notes', { titles: 'notes', notes: array2});
 });
 
 app.post('/', (req, res) => {
@@ -96,16 +110,24 @@ app.post('/', (req, res) => {
     if (err) throw err;
     console.log("Connected!");
 
-    var new_email = {id: "9", sender: "Alex Komarov", receiver: `${req.body.email}`, cc: `${req.body.cc}`, bcc: `${req.body.bcc}`, subject: `${req.body.subject}`, message: `${req.body.body}`, user_id: "0" };
-
+    var new_email = {id: idnumber, sender: "Alex Komarov", receiver: `${req.body.email}`, cc: `${req.body.cc}`, bcc: `${req.body.bcc}`, subject: `${req.body.subject}`, message: `${req.body.body}`, user_id: "0" };
+    idnumber += 1;
+    console.log(idnumber);
     //Create an insert query
     con.query("INSERT INTO email SET ?", new_email, (err, res) =>{
       if(err) throw err;
-    });
-  });
-});
 
+    });//ends insert query
+    con.release();
+  });//disconnect here
 
+});//ends the post method
+
+//register view engine
+app.set('view engine', 'ejs');
+
+//listen for requests
+app.listen(3000);
 // 404 page
 /*
 app.get('/', (req, res) => {
