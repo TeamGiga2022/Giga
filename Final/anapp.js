@@ -21,6 +21,7 @@ var array;
 var array2;
 var idnumber= 1;
 var idvalue = 3;
+var noteID = 1;
 var letter;
 
 //connect to database
@@ -33,6 +34,7 @@ con.connect(function(err) {
     console.log("data recieved from DB:");
     console.log(rows);
     rows.forEach( (row) => {
+      idnumber = `${row.id}`+1;
       console.log(`${row.sender} is the row dot sender`);
       console.log(`${row.receiver} is the reciever`);
       array= rows/*[
@@ -55,6 +57,21 @@ con.connect(function(err) {
 
 //pages
 app.get("/index.ejs", (req, res) => {
+  con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+    //now query database
+    con.query("SELECT * FROM email", function (err, rows) {
+      if (err) throw err;
+      rows.forEach( (row) => {
+        idnumber = `${row.id}`+1;
+        array= rows/*[
+              {id: `${row.id}`, sender: `${row.sender}`, receiver: `${row.receiver}`, cc: `${row.cc}`, bcc: `${row.bcc}`, subject: `${row.subject}`, userid: `${row.userid}` },
+            ];*/
+      });
+    });//end query
+  });
+
   res.render('index', { titles: 'inbox', blogs: array});
 });
 
@@ -102,6 +119,9 @@ app.get('/notes.ejs', (req, res) => {
 
       console.log("data recieved from DB:");
       array2= rows;
+      rows.forEach( (row) => {
+        noteID = `${row.id}`+1;
+      });
     });//end second query
   });//end mysql connection
   res.render('notes', { titles: 'notes', notes: array2});
@@ -113,18 +133,50 @@ app.post('/', (req, res) => {
   con.connect(function(err) {
     if (err) throw err;
     console.log("Connected!");
+    const d = new Date();
+    let date = d.toLocaleDateString([], {
+      year: 'numeric',
+      month: 'long',
+      day: '2-digit',
+      weekday: 'long',
+    });
 
-    var new_email = {id: idnumber, sender: "Alex Komarov", receiver: `${req.body.email}`, cc: `${req.body.cc}`, bcc: `${req.body.bcc}`, subject: `${req.body.subject}`, message: `${req.body.body}`, user_id: "0" };
+    var new_email = {id: idnumber, sender: "Alex Komarov", receiver: `${req.body.email}`, cc: `${req.body.cc}`, bcc: `${req.body.bcc}`, subject: `${req.body.subject}`, message: `${req.body.body}`,mdate: date, user_id: "0" };
     idnumber += 1;
     console.log(idnumber);
     //Create an insert query
     con.query("INSERT INTO email SET ?", new_email, (err, res) =>{
       if(err) throw err;
-
     });//ends insert query
   });//disconnect here
 
+  return res.redirect('/index.ejs');
 });//ends the post method
+
+app.post('/addnote', (req, res) => {
+  console.log(req.body);
+
+  con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+    const d = new Date();
+    let date = d.toLocaleDateString([], {
+      year: 'numeric',
+      month: 'long',
+      day: '2-digit',
+      weekday: 'long',
+    });
+
+    var new_notes = {id: noteID, date: date, activity: `${req.body.activity}`, worker_notes: `${req.body.workernotes}`, followup: `${req.body.followup}`};
+    noteID += 1;
+    con.query("insert into note SET ?", new_email, (err, res) =>{
+      if(err) throw err;
+    });//ends insert query
+    return res.redirect('/notes.ejs');
+  });//disconnect here
+});
+
+
 
 //register view engine
 app.set('view engine', 'ejs');

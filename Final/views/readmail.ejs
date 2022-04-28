@@ -21,14 +21,11 @@
     <!-- container for the main body --> <!-- -->
     <div class="container">
 
-      <div class="row profile">
+      <div class="profile">
         <!-- Buffer Zone -->
           <img src="Pics\woman.jpg" class="float-left" >
           <p> Mary </p>
-          <a href="#" class="btn">
-            Details
-          </a>
-          <a href="#" class="btn">
+          <a href="#">
             Logout
           </a>
       </div>
@@ -56,6 +53,8 @@
     </div>
 
     <div class="container box">
+
+      <h2> Read Mail </h2>
 
     <!-- Button Row Mail&Notes -->
     <div class="row">
@@ -94,16 +93,16 @@
         <div class="row">
             <div class="col text-center border bg-light">
                 <div class="row" border>
-                    <h4> From: <%=blogs[2].sender%> </h4>
+                    <h4> From: <%=blogs[0].sender%> </h4>
                 </div>
                 <div class="row border">
-                <h4> No associated date in database </h4>
+                  <h4> From: <%=blogs[0].mdate%> </h4>
                 </div>
                 <div class="row border">
-                    <h4> <%=blogs[2].subject%>  </h4>
+                    <h4> <%=blogs[0].subject%>  </h4>
                 </div>
                 <div class="row border">
-                    <p> <%=blogs[2].message%> </p>
+                    <p> <%=blogs[0].message%> </p>
                 </div>
             </div>
         </div>

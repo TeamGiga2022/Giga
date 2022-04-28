@@ -22,17 +22,14 @@
   <div class="container">
 
 
-      <div class="row profile">
-        <!-- Buffer Zone -->
-          <img src="Pics\woman.jpg" class="float-left" >
-          <p> Username </p>
-          <a href="#" class="btn">
-            Details
-          </a>
-          <a href="#" class="btn">
-            Logout
-          </a>
-      </div>
+    <div class="profile">
+      <!-- Buffer Zone -->
+        <img src="Pics\woman.jpg" class="float-left" >
+        <p> Mary </p>
+        <a href="#">
+          Logout
+        </a>
+    </div>
       <!-- Button Row Main NavBar -->
       <div class="row">
         <div class="col-4 myplan">
@@ -56,6 +53,8 @@
       </div>
 
       <div class="container box sendbody">
+
+        <h2> Add Note </h2>
 
       <!-- Button Row Mail&Notes -->
       <div class="row">
@@ -89,11 +88,7 @@
        </div>
 
        <!--Begin form-->
-       <form method="POST">
-        <div class="form-group">
-          <label for="date">Date:</label>
-          <input type="date" class="form-control" id="date">
-        </div>
+       <form method="POST" action="/addnote">
         <div class="form-group">
           <label for="activity">Activity:</label>
           <input type="text" class="form-control" id="activity">

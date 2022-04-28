@@ -21,14 +21,11 @@
     <!-- container for the main body --> <!-- -->
     <div class="container">
 
-      <div class="row profile">
+      <div class="profile">
         <!-- Buffer Zone -->
           <img src="Pics\woman.jpg" class="float-left" >
           <p> Mary </p>
-          <a href="#" class="btn">
-            Details
-          </a>
-          <a href="#" class="btn">
+          <a href="#">
             Logout
           </a>
       </div>
@@ -56,6 +53,7 @@
     </div>
 
     <div class="container box">
+      <h2> Outbox</h2>
 
     <!-- Button Row Mail&Notes -->
     <div class="row">
@@ -89,7 +87,7 @@
      </div>
 
 <!-- start of Template -->
-
+<% if (blogs) { %>
 <% if (blogs.length > 0) { %>
   <% blogs.forEach(thing => { %>
 <div class="row">
@@ -97,7 +95,7 @@
   <!-- first article --> <!-- this is where we would create a structure format - profile pic in first row -->
   <div class="col-sm-1 pic">
 
-    <img src="Pics\profilepic.png" alt="Picture of User Interface" class="img-fluid">
+    <img src="Pics\profilepic.png" alt="Profile pic" class="img-fluid">
   </div>
 
   <div class="col-sm-2 message1">
@@ -114,10 +112,10 @@
   </div>
   <div class="col-sm-1 pic">
     <a href="readmail.ejs">
-    <img src="Pics\sent.png" alt="Picture of User Interface" class="img-fluid">
+    <img src="Pics\sent.png" alt="Click to read sent mail" class="img-fluid">
     </a>
   </div>
-</div> <% }) } %><!-- End of first Template -->
+</div> <% }) } } %><!-- End of first Template -->
 
 
     </div><!-- End container -->
