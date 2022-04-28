@@ -21,66 +21,84 @@
     <!-- container for the main body --> <!-- -->
     <div class="container">
 
-    <div class="row" style="max-width: 200px">
-      <!-- Buffer Zone -->
-        <img src="Pics\woman.jpg" class="float-left" >
-        <h3> Username </h3>
-    </div>
+      <div class="row profile">
+        <!-- Buffer Zone -->
+          <img src="Pics\woman.jpg" class="float-left" >
+          <p> Mary </p>
+          <a href="#" class="btn">
+            Details
+          </a>
+          <a href="#" class="btn">
+            Logout
+          </a>
+      </div>
 
-    <!-- Button Row Main NavBar -->
-    <div class="row">
+     <!-- Button Row Main NavBar -->
+     <div class="row">
       <div class="col-4 myplan">
-          <a href="#" class="btn myplan">
+          <a href="#" class="btn">
             My Plan
             <img src="Pics/plan.png" alt="My Plan" class="img-fluid">
           </a>
       </div>
       <div class="col-4 actionplan">
-        <a href="#" class="btn actionplan">
+        <a href="#" class="btn">
           Action Plan
           <img src="Pics/goal.png" alt="Action Plan" class="img-fluid">
         </a>
       </div>
       <div class="col-4 mailnote">
-        <a href="index.ejs" class="btn mailnote">
+        <a href="index.ejs" class="btn">
           Mail/Notes
           <img src="Pics/mail.png" alt="Mail" class="img-fluid">
         </a>
       </div>
     </div>
 
+    <div class="container box">
+
     <!-- Button Row Mail&Notes -->
     <div class="row">
         <div class="col-sm inbox" aria-labelledby="inbox">
-          <a href="index.ejs" class="btn inbox">
+          <a href="index.ejs" class="btn">
             Inbox
             <img src="Pics/inbox.png" alt="Inbox" class="img-fluid">
           </a>
         </div>
 
         <div class="col-sm outbox" aria-labelledby="outbox">
-          <a href="outbox.ejs" class="btn outbox">
+          <a href="outbox.ejs" class="btn">
             Outbox
             <img src="Pics/outbox.png" alt="Outbox" class="img-fluid">
           </a>
         </div>
 
         <div class="col-sm send" aria-labelledby="send message">
-          <a href="sendmessage.ejs" class="btn send">
+          <a href="sendmessage.ejs" class="btn">
             Send Message
             <img src="Pics/send.png" alt="Send message" class="img-fluid">
           </a>
         </div>
 
         <div class="col-sm viewnote" aria-labelledby="view notes">
-          <a href="notes.ejs" class="btn viewnote">
+          <a href="notes.ejs" class="btn">
             View Notes
             <img src="Pics/notes.png" alt="Notes" class="img-fluid">
           </a>
         </div>
      </div>
+     <!--End Nav-->
 
-      <table class="table table-hover border table-dark">
+     <div class="row">
+      <div class="col-4 add">
+         <a href="addnote.ejs" class="btn add_button">Add Note + </a>
+      </div>
+      <div class="col-4 remove">
+       <a href="#" class="btn remove_button">Remove Note -</a>
+    </div>
+    </div>
+
+      <table class="table notetable">
         <thead>
             <tr>
                 <th scope="col">Date</th>
@@ -92,18 +110,12 @@
         <!-- JavaScript for loop to retrieve data and print each row, make rows contrasting colour, only need 1 tr just have multiple for example-->
         <% if (notes.length > 0) { %>
           <% notes.forEach(thing => { %>
-        <tr class="table-primary">
+        <tr class="table">
             <td> <%=thing.date %> </td>
             <td> <%=thing.activity %> </td>
             <td> <%=thing.worker_notes %> </td>
             <td> <%=thing.follow_up %> </td>
         </tr> <% }) } %>
-        <tr class="table-warning">
-            <td> 21/3/22 </td>
-            <td> Check up </td>
-            <td> Positive result </td>
-            <td> Update tomorrow </td>
-        </tr>
   </body>
 
   <footer>

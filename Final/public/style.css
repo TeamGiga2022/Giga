@@ -22,13 +22,17 @@ body{
     margin-bottom: 2%;
 }
 
+.myplan a {
+    width: 100%;
+}
+
 .myplan:hover {
     background-color: #bf0000;
 }
 
 .myplan img {
-    width: 10%;
-    height: 10%;
+    width: 3rem;
+    height: 3rem;
 }
 
 .actionplan
@@ -52,13 +56,17 @@ body{
     margin-bottom: 2%;
 }
 
+.actionplan a {
+    width: 100%;
+}
+
 .actionplan:hover {
     background-color: #ff721e;
 }
 
 .actionplan img {
-    width: 10%;
-    height: 10%;
+    width: 3rem;
+    height: 3rem;
 }
 
 .mailnote
@@ -82,13 +90,17 @@ body{
     margin-bottom: 2%;
 }
 
+.mailnote a {
+    width: 100%;
+}
+
 .mailnote:hover {
     background-color: #00dc00;
 }
 
 .mailnote img {
-    height: 10%;
-    width: 10%;
+    width: 3rem;
+    height: 3rem;
 }
 
 .inbox {
@@ -111,13 +123,17 @@ body{
     margin-bottom: 2%;
 }
 
+.inbox a {
+    width: 100%;
+}
+
 .inbox:hover {
     background-color: #bebebe;
 }
 
 .inbox img {
-    width: 10%;
-    height: 10%;
+    width: 2rem;
+    height: 2rem;
 }
 
 .outbox {
@@ -140,13 +156,17 @@ body{
     margin-bottom: 2%;
 }
 
+.outbox a {
+    width: 100%;
+}
+
 .outbox:hover {
     background-color: #59bfff;
 }
 
 .outbox img {
-    width: 10%;
-    height: 10%;
+    width: 2rem;
+    height: 2rem;
 }
 
 
@@ -170,16 +190,17 @@ body{
     margin-bottom: 2%;
 }
 
-
-
+.send  a {
+    width: 100%;
+}
 
 .send:hover {
     background-color: #bebebe;
 }
 
 .send img {
-    width: 10%;
-    height: 10%;
+    width: 2rem;
+    height: 2rem;
 }
 
 .viewnote {
@@ -202,13 +223,17 @@ body{
     margin-bottom: 2%;
 }
 
+.viewnote  a {
+    width: 100%;
+}
+
 .viewnote:hover {
     background-color: #59bfff;
 }
 
 .viewnote img {
-    width: 10%;
-    height: 10%;
+    width: 2rem;
+    height: 2rem;
 }
 
 .box {
@@ -224,11 +249,12 @@ body{
     display: block;
     border-width: 1px;
     border-radius: 5px;
+    padding-top: 1%;
 }
 
 pic a, img {
     height: 100%;
-    width: 100%;
+    width: 110%;
     border-radius: 5px;
 }
 
@@ -249,20 +275,22 @@ pic a, img {
     background-color: white;
     display: block;
     margin-bottom: 3%;
-    margin-left: 0.25%;
     border-radius: 15px;
-    height: 10%;
-    width: 10%;
+    height: 15rem;
+    width: 15rem;
 }
+
 .profile p {
     margin: 2%;
-    display: inline-block;
     overflow: hidden;
     text-decoration: underline;
+    text-align: center;
 }
 
 .profile img {
     padding-top: 3%;
+    height: 55%;
+    width: 60%;
     border-radius: 25px;
 }
 

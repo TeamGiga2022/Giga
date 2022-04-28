@@ -7,7 +7,7 @@ const app = express();
 var con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "Hannaloreitt123",
+  password: "wordpass",
   database: "emaildb"
 });
 
@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 //global arrays
 var array;
 var array2;
-var idnumber = 0;
+var idnumber= 1;
 var idvalue = 3;
 var letter;
 
@@ -65,6 +65,10 @@ app.get("/outbox.ejs", (req, res) => {
 // redirects
 app.get('/sendmessage.ejs', (req, res) => {
   res.render('sendmessage', { titles: 'sendmessage', blogs: array});
+});
+
+app.get('/addnote.ejs', (req, res) => {
+  res.render('addnote', { titles: 'addnote', blogs: array});
 });
 
 app.get('/readmail.ejs', (req, res) => {
@@ -118,7 +122,6 @@ app.post('/', (req, res) => {
       if(err) throw err;
 
     });//ends insert query
-    con.release();
   });//disconnect here
 
 });//ends the post method
