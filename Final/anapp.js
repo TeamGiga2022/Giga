@@ -167,13 +167,13 @@ app.post('/addnote', (req, res) => {
       weekday: 'long',
     });
 
-    var new_notes = {id: noteID, date: date, activity: `${req.body.activity}`, worker_notes: `${req.body.workernotes}`, followup: `${req.body.followup}`};
+    var new_notes = {id: noteID, date: date, activity: `${req.body.activity}`, worker_notes: `${req.body.workernotes}`, follow_up: `${req.body.followup}`};
     noteID += 1;
-    con.query("insert into note SET ?", new_email, (err, res) =>{
+    con.query("insert into note SET ?", new_notes, (err, res) =>{
       if(err) throw err;
     });//ends insert query
-    return res.redirect('/notes.ejs');
   });//disconnect here
+  return res.redirect('/notes.ejs');
 });
 
 

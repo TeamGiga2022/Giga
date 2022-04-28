@@ -1,5 +1,6 @@
 body{
     background-color: #ebecf0;
+    font-family: Helvetica;
 }
 
 .myplan {
@@ -327,7 +328,7 @@ pic a, img {
     margin: 2%;
     overflow: hidden;
     text-align: center;
-    font-weight: 550;
+    font-weight: 505;
     font-size: 130%;
 }
 
@@ -459,42 +460,18 @@ pic a, img {
     background-color: #00ff00;
 }
 
-.selected {
+.pname {
     text-align: center;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 20px;
-    background-color: #a79aff;
     display: block;
-    margin-top: 0.5%;
-    margin-bottom: 3%;
+    padding-bottom: 1%;
 }
 
-.selected button {
+.pname h2 {
     text-align: center;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 20px;
-    background-color: yellow;
-    display: block;
-    margin-bottom: 2%;
-}
-
-.selected a {
-    width: 100%;
-    font-size: 120%;
-    font-weight: 400;
-}
-
-.selected img {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-left: 1.5%;
-}
-
-h2 {
-    text-align: center;
-    margin: 1%;
-    padding-bottom: 2%;
     font-size: 220%;
+}
+
+.pname img {
+    height: 3rem;
+    width: 3rem;
 }
