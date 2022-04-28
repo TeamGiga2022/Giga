@@ -259,12 +259,30 @@ pic a, img {
 }
 
 
-.message {
+.message1 {
     text-align: center;
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
+}
 
+.message1 p {
+    text-align: center;
+    margin-top: 22.5%;
+    font-size: 150%;
+}
+
+.message2 {
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.message2 p {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 150%;
 }
 
 .profile
@@ -316,11 +334,6 @@ pic a, img {
     color: white;
 }
 
-.outof {
-    text-align: center;
-    text-decoration: underline;
-    margin-top: 1%;
-}
 
 .sendbody {
     background-color: #dddddd;
