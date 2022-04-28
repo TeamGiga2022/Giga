@@ -24,6 +24,8 @@ body{
 
 .myplan a {
     width: 100%;
+    font-size: 130%;
+    font-weight: 400;
 }
 
 .myplan:hover {
@@ -33,6 +35,7 @@ body{
 .myplan img {
     width: 3rem;
     height: 3rem;
+    margin-left: 1.5%;
 }
 
 .actionplan
@@ -58,6 +61,8 @@ body{
 
 .actionplan a {
     width: 100%;
+    font-size: 130%;
+    font-weight: 400;
 }
 
 .actionplan:hover {
@@ -67,6 +72,7 @@ body{
 .actionplan img {
     width: 3rem;
     height: 3rem;
+    margin-left: 1.5%;
 }
 
 .mailnote
@@ -92,6 +98,8 @@ body{
 
 .mailnote a {
     width: 100%;
+    font-size: 130%;
+    font-weight: 400;
 }
 
 .mailnote:hover {
@@ -101,6 +109,7 @@ body{
 .mailnote img {
     width: 3rem;
     height: 3rem;
+    margin-left: 1.5%;
 }
 
 .inbox {
@@ -110,7 +119,8 @@ body{
     border-radius: 20px;
     background-color: #EFEEF0;
     display: block;
-    margin-bottom: 2%;
+    margin-top: 0.5%;
+    margin-bottom: 3%;
 }
 
 .inbox button {
@@ -125,6 +135,8 @@ body{
 
 .inbox a {
     width: 100%;
+    font-size: 120%;
+    font-weight: 400;
 }
 
 .inbox:hover {
@@ -132,8 +144,9 @@ body{
 }
 
 .inbox img {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 1.5%;
 }
 
 .outbox {
@@ -143,7 +156,8 @@ body{
     border-radius: 20px;
     background-color: lightblue;
     display: block;
-    margin-bottom: 2%;
+    margin-top: 0.5%;
+    margin-bottom: 3%;
 }
 
 .outbox button {
@@ -158,6 +172,8 @@ body{
 
 .outbox a {
     width: 100%;
+    font-size: 120%;
+    font-weight: 400;
 }
 
 .outbox:hover {
@@ -165,8 +181,9 @@ body{
 }
 
 .outbox img {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 1.5%;
 }
 
 
@@ -177,7 +194,8 @@ body{
     border-radius: 20px;
     background-color: #EFEEF0;
     display: block;
-    margin-bottom: 2%;
+    margin-top: 0.5%;
+    margin-bottom: 3%;
 }
 
 .send button {
@@ -192,6 +210,8 @@ body{
 
 .send  a {
     width: 100%;
+    font-size: 120%;
+    font-weight: 400;
 }
 
 .send:hover {
@@ -199,8 +219,9 @@ body{
 }
 
 .send img {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 1.5%;
 }
 
 .viewnote {
@@ -210,7 +231,8 @@ body{
     border-radius: 20px;
     background-color: lightblue;
     display: block;
-    margin-bottom: 2%;
+    margin-top: 0.5%;
+    margin-bottom: 3%;
 }
 
 .viewnote button {
@@ -225,6 +247,8 @@ body{
 
 .viewnote  a {
     width: 100%;
+    font-size: 120%;
+    font-weight: 400;
 }
 
 .viewnote:hover {
@@ -232,8 +256,9 @@ body{
 }
 
 .viewnote img {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 1.5%;
 }
 
 .box {
@@ -255,7 +280,7 @@ body{
 pic a, img {
     height: 100%;
     width: 110%;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 
@@ -269,7 +294,7 @@ pic a, img {
 .message1 p {
     text-align: center;
     margin-top: 22.5%;
-    font-size: 150%;
+    font-size: 130%;
 }
 
 .message2 {
@@ -282,8 +307,9 @@ pic a, img {
 .message2 p {
     text-align: center;
     margin-top: 5%;
-    font-size: 150%;
+    font-size: 130%;
 }
+
 
 .profile
 {
@@ -292,28 +318,30 @@ pic a, img {
     border-width: 2px;
     background-color: white;
     display: block;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     border-radius: 15px;
-    height: 15rem;
-    width: 15rem;
+    height: 12.5rem;
+    width: 10rem;
 }
 
 .profile p {
     margin: 2%;
     overflow: hidden;
-    text-decoration: underline;
     text-align: center;
+    font-weight: 550;
+    font-size: 130%;
 }
 
 .profile img {
     padding-top: 3%;
-    height: 55%;
-    width: 60%;
-    border-radius: 25px;
+    height: 65%;
+    width: 75%;
+    border-radius: 15px;
 }
 
 .profile a {
-    color: blue;
+    color: blueviolet;
+    margin: 3.5%;
 }
 
 .profile a:hover {
